@@ -1,0 +1,524 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#site {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+        "topo topo topo"
+        "menu_h menu_h menu_h"
+        "menu_v principal principal"
+        "rodape rodape rodape";
+    text-align: center;
+    width: 100%;
+    height: 100px; 
+    width: 0 auto; 
+} 
+
+#site_livro {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+        "topo topo topo"
+        "menu_h menu_h menu_h"
+        "principal principal principal"
+        "rodape rodape rodape";
+    text-align: center;
+    width: 100%;
+    height: 100px; 
+    width: 0 auto; 
+} 
+
+#site_contato {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+        "topo topo topo"
+        "menu_h menu_h menu_h"
+        "principal principal principal"
+        "rodape rodape rodape";
+    text-align: center;
+    width: 100%;
+    height: 100px; 
+    width: 0 auto; 
+} 
+
+#site_trailer {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: 
+        "topo topo topo"
+        "menu_h menu_h menu_h"
+        "principal principal principal"
+        "rodape rodape rodape";
+    text-align: center;
+    width: 100%;
+    height: 100px; 
+    width: 0 auto; 
+}
+
+#topo {
+    background-color: rgb(20, 54, 1);
+    grid-area: topo;
+    padding: 10px 20px;
+    color: rgb(170, 213, 118);
+}
+
+#menu_h {
+    background-color: rgb(26, 70, 1);
+    grid-area: menu_h;
+    padding: 10px 20px;
+}
+
+#menu_h a{
+    color: rgb(170, 213, 118); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+}
+#menu_h a:hover{
+    background-color: rgb(170, 213, 118);
+    transition: border-radius 0.5s ease;
+    border-radius: 20px;
+    color: rgb(36, 85, 1); 
+}
+
+#menu_v {
+    background-color: rgb(36, 85, 1);
+    grid-area: menu_v;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu_v a {
+    color: rgb(170, 213, 118);
+    text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+#menu_v a:hover {
+    background-color: rgb(170, 213, 118);
+    transition: border-radius 0.5s ease;
+    border-radius: 20px;
+    color: rgb(36, 85, 1);
+}
+
+#principal {
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_livro {
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_livro h1 {
+    grid-area: principal;
+    padding: 20px; 
+    text-align: justify; 
+    font-size: 20px;
+    color: rgb(36, 85, 1);
+}
+
+#principal_livro a {
+    color: rgb(20, 54, 1);
+    text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+#principal_inicio p {
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: justify; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_inicio h1 {
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_inicio h2 {
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_filme p{
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: justify; 
+    color: rgb(36, 85, 1);
+}
+
+#volta {
+    grid-area: principal;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#volta a {
+    color: rgb(36, 85, 1);
+    text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+#rodape {
+    background-color: rgb(20, 54, 1);
+    grid-area: rodape;
+    color: rgb(170, 213, 118);
+}
+
+#rodape_filme {
+    background-color: rgb(20, 54, 1);
+    grid-area: rodape;
+    color: rgb(170, 213, 118);
+    margin-top: 70px;
+}
+
+.rodape_lk{
+    list-style-type: none; 
+    padding: 11px;
+}
+
+.rodape_lk li{
+    display: inline; 
+    margin-right: 10px; 
+}
+
+.rodape_lk a{
+    color: rgb(170, 213, 118); 
+    text-decoration: none; 
+}
+
+.rodape_lk a:hover{
+    text-decoration: underline; 
+}
+
+#mini {
+    background-color: rgb(83, 141, 34);
+    border: 2px double rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+
+#primeirofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+#segundofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+#terceirofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+#quartofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+#quintofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+#sextofilme {
+    background-color: rgb(83, 141, 34);
+    border: 1px solid rgb(170, 213, 118);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.miniatura {
+    background-color: rgb(170, 213, 118);
+    border: 3px double rgb(170, 213, 118);
+}
+
+.miniatura p{
+    text-align: justify;
+    color: rgb(20, 54, 1);
+}
+    
+.miniatura:hover {
+    background-color: rgb(115, 169, 66);
+    transition: 1s;
+    border-radius: 15px;
+}
+
+#principal_curiosidade h1,h3{
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: center; 
+    color: rgb(36, 85, 1);
+}
+
+#principal_curiosidade p{
+    background-color: rgb(255, 255, 255);
+    grid-area: principal;
+    padding: 20px; 
+    text-align: justify; 
+    color: rgb(36, 85, 1);
+    font-size: 16px;
+}
+
+#formulario_contato {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+header div.galeria{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+header div.galeria div.single-galeria{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    margin: 0 5px;
+    transition: width 1s;
+}
+
+header div.galeria div.single-galeria:first-child{
+    width: 35% !important;
+}
+
+header div.galeria:hover div.single-galeria:first-child{
+    width: 20% !important;
+}
+
+header div.galeria div.single-galeria:hover{
+    width: 35% !important;
+}
+
+header div.galeria div.single-galeria:first-child:hover{
+    width: 35% !important;
+}
+
+
+header div.galeria div.single-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header div.galeria div.single-galeria div.info{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 65%, transparent);
+    padding: 16% 8%;
+    bottom: 0;
+}
+
+header div.galeria div.single-galeria div.info h1{
+    font-size: 26px;
+    color: white;
+}
+
+header div.galeria div.single-galeria div.info p{
+    font-size: 14px;
+    line-height: 28px;
+    color: white;
+}
+
+header div.galeria div.single-galeria div.info a{
+    font-size: 14px;
+    line-height: 28px;
+    color: gold;
+    text-decoration: none;
+}
+
+header div.galeria div.single-galeria div.info a:hover{
+    text-decoration: underline;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 8%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(250,250,250);
+}
+
+section p{
+    color: rgb(100,100,100);
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+@media screen and (max-width: 764px){
+
+    header div.galeria{
+        width: 100%;
+        height: 70vh;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    
+    header div.galeria div.single-galeria{
+        min-width: 90% !important;
+    }
+
+}
+
+.container {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2.5s;
+}
+  
+.front-side, .back-side {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+  
+.front-side {
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/e/ec/O-parque-dos-dinossauros-original.jpg);
+    background-size: cover;
+}
+  
+.back-side {
+    background-color: rgb(115, 169, 66);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
