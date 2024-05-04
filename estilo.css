@@ -61,16 +61,44 @@ body {
 }
 
 #topo {
-    background-color: rgb(20, 54, 1);
     grid-area: topo;
+    width: 100%;
     padding: 10px 20px;
-    color: rgb(170, 213, 118);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(20, 54, 1), rgb(83, 141, 34), rgb(36, 85, 1));
+    background-size: 500% 100%;
+    animation-name: degrade;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+  }
+#topo h1 {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 60px;
+    font-family: Impact;
+    background-image: url("https://s1.static.brasilescola.uol.com.br/be/2022/06/paisagem-natural-floresta.jpg");
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0);
+    text-transform: uppercase;
 }
 
 #menu_h {
-    background-color: rgb(26, 70, 1);
+    background-color: rgba(20, 54, 1, 1);
     grid-area: menu_h;
     padding: 10px 20px;
+    font-size: 15px;
 }
 
 #menu_h a{
@@ -201,6 +229,20 @@ body {
     color: rgb(170, 213, 118);
 }
 
+#rodape_livro {
+    background-color: rgb(20, 54, 1);
+    grid-area: rodape;
+    color: rgb(170, 213, 118);
+    margin-top: 60px;
+}
+
+#rodape_contato {
+    background-color: rgb(20, 54, 1);
+    grid-area: rodape;
+    color: rgb(170, 213, 118);
+    margin-top: 70px;
+}
+
 #rodape_filme {
     background-color: rgb(20, 54, 1);
     grid-area: rodape;
@@ -210,7 +252,7 @@ body {
 
 .rodape_lk{
     list-style-type: none; 
-    padding: 11px;
+    padding: 15px;
 }
 
 .rodape_lk li{
@@ -522,3 +564,52 @@ section p{
     cursor: pointer;
     transform: rotateY(180deg);
 }
+
+.video-playlist {
+    width: 640px;
+    margin: 0 auto;
+    background-color: rgb(170, 213, 118);
+    box-shadow: 0 2px 8px rgba(20, 54, 1,0.1);
+}
+.video-selector {
+    background-color: rgb(20, 54, 1);
+    color: rgb(170, 213, 118);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+input[type="radio"] {
+    display: none;
+}
+  
+.video-label {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+input[type="radio"]:checked + label {
+    border-radius: 20px;
+    background-color: rgb(83, 141, 34);
+    color: rgb(170, 213, 118);
+}
+  
+.videos .video {
+    display: none;
+    padding: 0;
+}
+  
+input#video1:checked ~ .videos .video:nth-child(1),
+input#video2:checked ~ .videos .video:nth-child(2),
+input#video3:checked ~ .videos .video:nth-child(3),
+input#video4:checked ~ .videos .video:nth-child(4) {
+display: block;
+}
+  
+iframe {
+    width: 100%;
+    height: 360px;
+    border: none;
+}
+  
